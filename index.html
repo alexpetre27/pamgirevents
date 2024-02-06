@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-\icon" href="public\logo.ico">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="index.js" defer></script>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamgir Events</title>
+</head>
+<body>
+  <div class="loader">
+    <img src="public\logo.jpg" style="animation: pulse 2s infinite" />
+  </div>
+    <div class="topnav" id="Topnav">
+      <a href="index.html"><b>Acasa</b></a>
+      <a href="galerie.html"><b>Galerie</b></a>
+      <a href="oferte.html"><b>Oferte</b></a>
+      <a href="contact.html"><b>Contact</b></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="topnav-logo">
+            <img class="topnav-logo" src="public\logosite2.png" onclick="redirectToLink()">
+      </div>
+  </div>
+      <nav>
+        <ul>
+
+          <li>
+            <a href="https://www.instagram.com/pamgir.events/">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/40765545784">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:pamgirevents@gmail.com">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+   </div> 
+    <div id="myModal" class="modal">
+    <span class="closebtn" onclick="closeModal(event)">&times;</span>
+    <img class="modal-content" id="expandedImg">
+    <button class="nav-button prev-button" onclick="changeImage('prev')"> <b> &#8249;</b></button>
+    <button class="nav-button next-button" onclick="changeImage('next')"> <b> &#8250; </b></button>
+</div>
+  
+  <div class="row">
+    <div class="column-container">
+    <div class="column">
+      <img src="public\imag11.jpg"  style="width:100%" onclick="myFunction(event);">
+    </div>
+    <div class="column">
+      <img src="public\imag1.jpg" style="width:100%" onclick="myFunction(event);">
+    </div>
+    <div class="column">
+      <img src="public\imag5.jpg" style="width:100%" onclick="myFunction(event);">
+    </div>
+  </div>
+  </div>
+  
+    <div class="redirect">
+        <div class="btn" id="mybtn">
+          <a href="contact.html" style="text-decoration: none; color:white;"> Cere o oferta personalizata!</a>
+        </div>
+    </div>
+</body>
+</html>

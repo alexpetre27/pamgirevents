@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-\icon" href="public\logo.ico">
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="contact.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pamgir Events</title>
+  </head>
+  <body> 
+  <div class="loader">
+    <img src="public\logo.jpg" style="animation: pulse 2s infinite" />
+  </div>
+    <div class="topnav" id="Topnav">
+          <div class="topnav-logo">
+            <img src="public\logosite2.png" onclick="redirectToLink()">
+      </div>
+      <a href="index.html"><b>Acasa</b></a>
+      <a href="galerie.html"><b>Galerie</b></a>
+      <a href="oferte.html"><b>Oferte</b></a>
+      <a href="contact.html"><b>Contact</b></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    
+    </div>
+    <nav>
+      <ul>
+       
+        <li>
+          <a href="https://www.instagram.com/pamgir.events/">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/40765545784">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:pamgirevents@gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  
+    <div class="cutiicontact">
+      <div class="cutietext">
+        &nbsp;&nbsp;&nbsp;<b> Oferta personalizata</b>
+
+        <form id="progressive-form" action="process.php" method="post">
+          <div class="form-section" id="Step1">
+            <label for="numeField">Nume si prenume</label> <br />
+            <input
+              type="text"
+              id="numeField"
+              name="nume"
+              required
+              minlength="3"
+              maxlength="50"
+              placeholder="Introduceti numele"
+            />
+          </div>
+
+          <div class="form-section" id="Step2">
+            <label for="judet">In ce judet va avea loc?</label> <br />
+            <select id="judetField" name="judet" required>
+              <option value="#">Alege judetul</option>
+              <option value="Alba">Alba</option>
+              <option value="Arad">Arad</option>
+              <option value="Argeș">Argeș</option>
+              <option value="Bacău">Bacău</option>
+              <option value="Bihor">Bihor</option>
+              <option value="Bistrița-Năsăud">Bistrița-Năsăud</option>
+              <option value="Botoșani">Botoșani</option>
+              <option value="Brăila">Brăila</option>
+              <option value="Brașov">Brașov</option>
+              <option value="București">București</option>
+              <option value="Buzău">Buzău</option>
+              <option value="Călărași">Călărași</option>
+              <option value="Caraș-Severin">Caraș-Severin</option>
+              <option value="Cluj">Cluj</option>
+              <option value="Constanța">Constanța</option>
+              <option value="Covasna">Covasna</option>
+              <option value="Dâmbovița">Dâmbovița</option>
+              <option value="Dolj">Dolj</option>
+              <option value="Galați">Galați</option>
+              <option value="Giurgiu">Giurgiu</option>
+              <option value="Gorj">Gorj</option>
+              <option value="Harghita">Harghita</option>
+              <option value="Hunedoara">Hunedoara</option>
+              <option value="Ialomița">Ialomița</option>
+              <option value="Iași">Iași</option>
+              <option value="Ilfov">Ilfov</option>
+              <option value="Maramureș">Maramureș</option>
+              <option value="Mehedinți">Mehedinți</option>
+              <option value="Mureș">Mureș</option>
+              <option value="Neamț">Neamț</option>
+              <option value="Olt">Olt</option>
+              <option value="Prahova">Prahova</option>
+              <option value="Sălaj">Sălaj</option>
+              <option value="Satu Mare">Satu Mare</option>
+              <option value="Sibiu">Sibiu</option>
+              <option value="Suceava">Suceava</option>
+              <option value="Teleorman">Teleorman</option>
+              <option value="Timiș">Timiș</option>
+              <option value="Tulcea">Tulcea</option>
+              <option value="Vâlcea">Vâlcea</option>
+              <option value="Vaslui">Vaslui</option>
+              <option value="Vrancea">Vrancea</option>
+            </select>
+          </div>
+
+          <div class="form-section" id="Step3">
+            <label for="tipEvenimentField"
+              >Care este tipul evenimentului?</label
+            >
+            <br />
+            <select name="tipEveniment" id="tipEvenimentField" required>
+              <option value="#">Alege tipul evenimentului</option>
+              <option value="Nunta">Nunta</option>
+              <option value="Botez">Botez</option>
+              <option value="Majorat">Majorat</option>
+              <option value="Cununie">Cununie civila</option>
+              <option value="Onomastica">Onomastica</option>
+              <option value="Alt tip">Alt tip</option>
+            </select>
+          </div>
+
+          <div class="form-section" id="Step4">
+            <label for="dataField"
+              >Pe ce data se va desfasura evenimentul?
+            </label>
+            <br />
+            <input
+              type="date"
+              id="dataField"
+              name="data"
+              class="date-input"
+              required
+            />
+          </div>
+
+          <div class="form-section" id="Step5">
+            <label for="invitatiField">Numarul de invitati </label> <br />
+            <input
+              type="number"
+              id="invitatiField"
+              name="invitati"
+              min="0"
+              max="1000"
+              class="invitati"
+              required
+              placeholder="Max 1000"
+            />
+          </div>
+
+          <div class="form-section" id="Step6">
+            <label for="telefonField">Numarul de telefon</label> <br />
+            <input
+              type="tel"
+              id="telefonField"
+              name="telefon"
+              required
+              minlength="4"
+              maxlength="11"
+              class="nrtelefon"
+              placeholder="Introduceti numarul"
+            />
+          </div>
+
+          <div class="form-section">
+            <label for="infoSuplField" style="font-size: 26px"
+              >Informatii extra</label
+            >
+            <br />
+            <div class="limitari">
+              <textarea
+                name="infosupl"
+                id="infoSuplField"
+                cols="15"
+                rows="5"
+                class="maximize-textarea"
+              ></textarea>
+            </div>
+          </div>
+          <div class="button-container">
+            <button
+              type="button"
+              id="prevBtn"
+              onclick="prevStep()"
+              style="color: white"
+            >
+              <b>Pasul Anterior</b>
+            </button>
+            <button
+              type="button"
+              id="nextBtn"
+              onclick="nextStep()"
+              style="color: white"
+            >
+              <b>Urmatorul pas</b>
+            </button>
+            <button
+              type="submit"
+              id="submitBtn"
+              style="display: none; color: white"
+            >
+              <b>Trimite</b>
+            </button>
+          </div>
+        </form>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <div class="cutietext">
+        <b>Contact</b> <br />
+
+        <br />
+        <p
+          style="
+            font-size: 22px;
+            text-align: left;
+            padding: 0px 10px;
+            color: black;
+            letter-spacing: 1px;
+          "
+        >
+          Telefon: 0765 545 784 <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0768
+          314 444
+        </p>
+      </div>
+    </div>
+  
+  </body>
+</html>
